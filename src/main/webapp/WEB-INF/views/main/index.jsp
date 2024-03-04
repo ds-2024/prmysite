@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="http:localhost:8080/prmysite/assets/css/mysite.css" rel="stylesheet" type="text/css">
-<link href="http:localhost:8080/prmysite/assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assets/css/mysite.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assets/css/main.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -15,7 +15,7 @@
 
 		<div id="header" class="clearfix">
 			<h1>
-				<a href="">MySite</a>
+				<a href="">MySite -${pageContext.request.contextPath} </a>
 			</h1>
 
 			<!-- 
@@ -51,7 +51,7 @@
 				<!-- content-head 없음 -->
 				<div id="index"> 
 				
-					<img id="profile-img" src="http:localhost:8080/prmysite/assets/image/profile.jpg">
+					<img id="profile-img" src="${pageContext.request.contextPath}/assets/image/profile.jpg">
 					
 					<div id="greetings">
 						<p class="text-xlarge">
